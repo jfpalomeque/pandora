@@ -24,5 +24,5 @@ pairwise.manova<-function(data, V, Z){
     }
   row.names(pairwise.p)<-NULL
   colnames(pairwise.p)<-c("Pairwise", "p-value")
-  pairwise.p<<-pairwise.p
+  pairwise.manova.p<<-pairwise.p
   }

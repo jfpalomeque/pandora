@@ -12,14 +12,15 @@ function(){#This function run all other functions in order to create a new Data 
     for(w in c(1:ncol(marks))) {
       marks[,w] <- as.character(marks[,w])
     }
-    
+
     while(i<=l){
-      
+
       dir.process()
       marks<-rbind(marks,newrow)
       marks<<-marks
       save.image(".RData")
-        
-      
+
+
     }
-  }
+    data_processing_menu()
+    }

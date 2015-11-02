@@ -4,4 +4,5 @@ load_original_dataset<-
     marks_exp1_hc_hs_id<-marks_exp1_hc_hs_id[,-1]
     marks<<-marks_exp1_hc_hs_id
     rm(marks_exp1_hc_hs_id)
+    stop(data_processing_menu())
   }
