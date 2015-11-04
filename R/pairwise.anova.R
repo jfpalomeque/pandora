@@ -1,8 +1,6 @@
-#V<-"section"
-#Z<- c("WIS", "WIM", "WIB")
-#data<-marks
 pairwise.anova<-function(data, V, Z){
   #data, data.frame with data for the test, V, variable to create groups,Z, variables to do manova.
+  Z<-Z
   options(scipen = 999)
   data<-data
   marks_sub<-subset(data, select= V)
