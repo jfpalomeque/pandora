@@ -1,4 +1,4 @@
-pairwise.anova_interactive<-function(data){
+lda_pandora_interactive<-function(data){
   print(paste("Select cualitative variable for to do groups"))
   V<-variable<-select.list(colnames(data))
   cat("Write cuantitative variables for to do ANOVA, \n separated by commas (NOT SPACES, NOT QUOTES)\n")
@@ -6,8 +6,9 @@ pairwise.anova_interactive<-function(data){
   readline(prompt=":")->>Z
   strsplit(Z, ",")->Z
   Z<-unlist(Z)
-  pairwise.anova(data, V, Z)
-  sig.pairwise.anova.p
-  pairwise.anova.p
+  lda_pandora(data, V, Z)
+  fit
+  matriz_confusion
+  sume_confusion
   stop(statistical_tests_menu_bis())
-  }
+}

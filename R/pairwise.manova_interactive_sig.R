@@ -8,5 +8,6 @@ pairwise.manova_interactive_sig<-function(data){
   levels(ZZ)->Z
   variables.using.MANOVA<<-Z
   pairwise.manova(data, V, Z)
+  pairwise.anova.p
   stop(statistical_tests_menu())
 }

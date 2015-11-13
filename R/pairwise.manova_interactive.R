@@ -7,5 +7,6 @@ pairwise.manova_interactive<-function(data){
   strsplit(Z, ",")->Z
   Z<-unlist(Z)
   pairwise.manova(data, V, Z)
+  pairwise.anova.p
   stop(statistical_tests_menu())
 }
