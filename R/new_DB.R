@@ -6,9 +6,11 @@ function(){#This function run all other functions in order to create a new Data 
     enter.dir()
     marks<<-data.frame()
     dir.process()
-    names<-c("site", "n_site", "n", "material", "section", "taxon_bone", "type_bone", "LM1x", "LM1y", "LM2x", "LM2y", "LM3x", "LM3y", "LM4x", "LM4y", "LM5x", "LM5y", "LM6x", "LM6y", "LM7x", "LM7y", "WIS", "WIM", "WIB", "LDC", "RDC", "d", "OA")
+    names<-c("site", "n_site", "n", "material", "section", "taxon_bone", "type_bone", "LM1x", "LM1y", "LM2x", "LM2y", "LM3x", "LM3y", "LM4x", "LM4y", "LM5x", "LM5y", "LM6x", "LM6y", "LM7x", "LM7y", "WIS", "WIM", "WIB", "LDC", "RDC", "SI", "d", "OA")
     marks<-rbind(marks,newrow)
     names(marks)<-names
+    marks<<-marks
+    save(marks, file="data_marks")
     for(w in c(1:ncol(marks))) {
       marks[,w] <- as.character(marks[,w])
     }
@@ -18,6 +20,7 @@ function(){#This function run all other functions in order to create a new Data 
       dir.process()
       marks<-rbind(marks,newrow)
       marks<<-marks
+      save(marks, file="data_marks")
       save.image(".RData")
 
 
