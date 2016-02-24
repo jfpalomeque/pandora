@@ -7,6 +7,7 @@ function(){
   select.section()
   #select.taxon()
   select.type()
+  select.Anatomic_Part()
   enter.scale()
   xy.scale()
   compute.scale()
@@ -20,7 +21,7 @@ function(){
   compute.SI()
   compute.d()
   compute.OA()
-  newrow<<-c(site, n_site, n, material, section, taxon_bone, type_bone, LM1x, LM1y, LM2x, LM2y, LM3x, LM3y, LM4x, LM4y, LM5x, LM5y, LM6x, LM6y, LM7x, LM7y, WIS, WIM, WIB, LDC, RDC, SI, d, OA)
+  newrow<<-c(site, n_site, n, material, section, taxon_bone, type_bone, Anatomic_Part, LM1x, LM1y, LM2x, LM2y, LM3x, LM3y, LM4x, LM4y, LM5x, LM5y, LM6x, LM6y, LM7x, LM7y, WIS, WIM, WIB, LDC, RDC, SI, d, OA)
   i<<-i+1
   save(dir_images, files, files_names, l, i, site, material, taxon_bone, file="dir_data")
 }
