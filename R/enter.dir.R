@@ -2,7 +2,7 @@ enter.dir <-
 function(){
 #Select directory where are the pictures, and list them. Take too length
 #and a object (i) with valor 1
-  dir<-choose.dir()
+  dir<-tk_choose.dir()
   dir_images<<-dir
   files<<-list.files(dir, pattern= ".jpg", full.names = TRUE)
   files_names<<-list.files(dir, pattern= ".jpg", full.names = FALSE)

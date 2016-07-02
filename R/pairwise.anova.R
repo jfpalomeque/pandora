@@ -14,7 +14,7 @@ pairwise.anova<-function(data, V, Z){
       variable<-as.matrix(subset(marks_subs, select = V))
       Y<-as.matrix(subset(marks_subs, select = Z[i]))
       AOV<-aov(Y ~ variable, data = marks_subs)
-      ntsummary(AOV)[[1]][["Pr(>F)"]]->A
+      summary(AOV)[[1]][["Pr(>F)"]]->A
       pairwise.line<-c(paste(c[1,x], c[2,x]), Z[i], A[1])
       pairwise.p<-rbind(pairwise.line, pairwise.p)
     }
