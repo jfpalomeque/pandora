@@ -8,6 +8,3 @@ matriz_confusion_LDA<<-diag(prop.table(matriz_confusion, 1))
 sume_confusion<<-sum(diag(prop.table(matriz_confusion)))
 }
 
-
-
-
