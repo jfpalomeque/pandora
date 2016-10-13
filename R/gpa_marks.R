@@ -16,5 +16,5 @@ classifiers<-factor(classifiers)
 gpaLM<-gpagen(coords)
 
 plotAllSpecimens(gpaLM$coords)
- pca.lands <- plotTangentSpace(gpaLM$coords, label=TRUE, groups = classifiers, verbose=TRUE)
+ pca.lands <- plotTangentSpace(gpaLM$coords, label=TRUE, groups = classifiers)
  }
