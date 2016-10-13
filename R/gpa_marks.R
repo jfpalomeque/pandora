@@ -5,7 +5,7 @@ gpa.marks<-function(data){
   V<-variable<-select.list(colnames(data))
 #V variable for to do groups
 
-marcasLM<-data[,9:23]
+marcasLM<-data[,9:22]
 marks_sub<-subset(data, select= V)
 marcasLM[,15]<-data[V]
 coords<-marcasLM[,-15]
