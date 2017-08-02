@@ -1,9 +1,9 @@
 Package: Pandora
 Type: Package
-Title: What the package does (short line)
+Title: Data processing of marks in bones, from images of sections
 Version: 1.0
 Date: 2015-09-15
-Author: Who wrote it
+Author: Juan F. Palomeque
 Maintainer: Who to complain to <yourfault@somewhere.net>
 Description: More about what it does (maybe more than one line)
 License: What license is it under?
